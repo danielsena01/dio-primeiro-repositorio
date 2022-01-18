@@ -1,0 +1,95 @@
+<h1...6> </h1...6> = Títulos organizados hierarquicamente
+<p> </p> = parágrafos
+<br> = quebra de linha
+<ul> </ul> = lista não ordenada
+<li> </li> = itens da lista
+<ol> </ol> = lista ordenada
+<ol TYPE="1 ou A ou a ou I"> = tipo de numeração das listas para listas ordenadas
+<dl> </dl> = lista de descrição
+<dt> </dt> = tag para itens da lista de descrição
+<dd> </dd> = descrição do item
+<img src="caminho.extensão" title="titulodaimagem" alt="tituloalternativodaimagem"...
+... width="larguradaimagemPX" height="alturadaimagemPX">
+<iframe  width="500" height="500" src="caminho.extensão"> </iframe> = criar páginas dentro de outras
+páginas
+
+<a href="caminho do link a ser aberto" target="_self" ou "_blank"> DESCRIÇÃO DO LINK </a>
+_self = abrir link na mesma janela
+_blank = abrir em nova aba
+
+<table> </table> = criar tabelas
+<caption> </caption> = Legenda da tabela
+<tr> </tr> = criar linhas da tabela
+<th> </th> = criar titulos para as colunas da tabela dentro da linha
+<td> </td> = criar informações para a tabela dentro da linha
+<td colspan="3"> </td> = fazer um dado ocupar mais de uma coluna
+<div> </div> = Um bloco para outros elementos HTML (serve para pintar o fundo de um texto com CSS)
+<span> </span> = marca uma parte especifica do texto como uma span para formatar com CSS
+<!-- --> = Comentários
+
+<audio> </audio> = TAG aúdio
+<source src="caminho.extensão" type="audio/mpeg ou audio/ogg ou audio/wav">
+
+<audio controls autoplay loop> </audio>
+
+<video> </video> = TAG vídeo
+<source src="caminho.extensão" type="video/mp4">
+
+<video controls width="700" height="450" autoplay loop>
+
+<form action="localparaondeseráenviadaainfo.extensão method="POST ou GET"> </form>
+POST = as informações são "censuradas"; GET = as informações são enviadas pelo url.
+
+<input type="text ou password ou submit" name="noma ou senha ou btn- (botão) - tipo do campo"...
+... value="Enviar">
+<fieldset> </fieldset> = circular uma área
+<legend> </legend> = criar uma legenda para o campo circulado
+
+COLOCAR DENTRO DE <input>: 
+required = exige que o campo esteja preenchido para enviar a info
+autofocus = seleciona a área desejada
+disabled = desabilita a área desejada
+maxleght="tamanho máximo de caracteres para a área"
+checked = marca um botão
+type="text ou password ou submit ou email ou radio" ----- 
+type="radio" = cria um campo selecionável onde só é permitido escolher uma opção caso a variável "name"...
+...seja igual
+type="checkbox" = cria caixas para selecionar, é possível selecionar mais de uma caixa
+type="number" = campo para selecionar um número, é possível definir o intervalo
+type="range" = um slider
+type="color"  = selecionar uma cor
+autocomplete="on ou off" completar automaticamente ou não um campo determinado
+placeholder="seuemail@gmail.com" = utilizado para deixar uma marcação no fundo do campo para orientação.
+type="file" = criar campo para selecionar um arquivo
+type="hidden" = cria um espaço transparente
+type="url" = campo para adicionar um url
+type="search" = campo de pesquisa para o site
+type="tel" = campo para adicionar telefone
+type="date" = campo para data, é possível definir máximo e minimo no formato: AAAA/MM/DD
+type="time" = campo para hora
+type="month" = campo que aparece somente mês e ano
+type="week" = campo para semanas
+type="datetime" = campo para data e hora
+
+
+<textarea> </textarea> = caixa de texto com indicador de erro ortografico ativado automaticamente
+row="quantidade" e cols="quantidade" = possível determinar número de linhas e colunas
+spellcheck="false or true" = ativa ou desativa o indicador de erro ortográfico
+<button type="button"> Clique-me </button> = tag para botão, é necessário colocar texto entre a abertura e...
+... o fechamento das tags para o botão receber um formato
+
+<select name="veiculo"> </select> = cria um campo para selecionar uma das opções
+<option value="camaro"> descrição do value </option> = dentro da variável select, a tag option tem tag de...
+abertura e fechamento; dentro da variável datalist a tag option não tem tag de fechamento
+<optgroup label="tipodoveiculo"> as opções de veículos deste tipo ficam entre essas duas tags </optgroup>
+
+<input name="cursos" list="id da datalist">
+<datalist id="nomedalista"> </datalist>
+<option value="HTML5"> = não tem tag de fechamento e não precisa de descrição
+
+tipos de enctype:
+1 - application/x-www-form-urlencoded ---->  É o padrão. Todos os caracteres são codificados antes de serem enviados (os espaços são convertidos em símbolos "+" e os caracteres especiais são convertidos em valores ASCII HEX).
+
+2 - multipart/form-data ---->  Nenhum caractere é codificado. Esse valor é necessário quando você estiver usando formulários que tenham um controle de upload de arquivo, como por exemplo input type file.
+
+3 - text/plain -----> Os espaços são convertidos em símbolos "+", mas não são codificados caracteres especiais.
