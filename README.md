@@ -5,5 +5,4 @@ Desafio de Projeto do GIT/GITHUB
 [Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)
 
 ## Cursos completos
-HTML
-CSS
+HTML e CSS
